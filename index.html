@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Katia Marmeleiro Advocacia - Especialista em Direito Previdenciário">
     <meta property="og:description" content="Advogada especializada em Direito Previdenciário, Sucessório, Imobiliário, Consumidor, Trabalhista e Civil. Atendimento em Nilópolis - RJ. Tel: (21) 98523-6037">
-    <meta property="og:image" content="favicon.png">
+    <meta property="og:image" content="imagens/favicon.png">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Katia Marmeleiro Advocacia">
 
@@ -26,7 +26,7 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Katia Marmeleiro Advocacia - Especialista em Direito Previdenciário">
     <meta property="twitter:description" content="Advogada especializada em Direito Previdenciário, Sucessório, Imobiliário, Consumidor, Trabalhista e Civil. Nilópolis - RJ. Tel: (21) 98523-6037">
-    <meta property="twitter:image" content="favicon.png">
+    <meta property="twitter:image" content="imagens/favicon.png">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -36,8 +36,8 @@
         "name": "Katia Marmeleiro Advocacia",
         "description": "Advogada especializada em Direito Previdenciário, Sucessório, Imobiliário, Consumidor, Trabalhista e Civil",
         "url": "",
-        "logo": "favicon.png",
-        "image": "favicon.png",
+        "logo": "imagens/favicon.png",
+        "image": "imagens/favicon.png",
         "telephone": "+55-21-98523-6037",
         "email": "katiamarmeleiroadv@gmail.com",
         "address": {
@@ -67,9 +67,9 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <link rel="apple-touch-icon" href="imagens/favicon.png">
+    <link rel="shortcut icon" href="imagens/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -120,6 +120,13 @@
             z-index: 20;
         }
         
+        @media (max-width: 767px) {
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: 45%;
+            }
+        }
+        
         .swiper-button-next:hover,
         .swiper-button-prev:hover {
             background: rgba(0, 0, 0, 0.6);
@@ -147,7 +154,7 @@
         
         .hero-fixed-content {
             position: absolute;
-            top: 2%;
+            top: 8%;
             left: 50%;
             transform: translate(-50%, 0);
             width: 100%;
@@ -199,7 +206,7 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <img src="imagens/logo.png" alt="Katia Marmeleiro Advocacia" class="h-12 md:h-16 w-auto">
+                    <img src="imagens/logo.png" alt="Katia Marmeleiro Advocacia" class="h-10 md:h-16 w-auto">
                 </div>
                 
                 <!-- Navigation Menu -->
@@ -356,7 +363,7 @@
                 <!-- Conteúdo -->
                 <div class="text-center">
                     <!-- Grid de 3 imagens -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
+                    <div class="grid grid-cols-3 gap-2 md:gap-6 mb-8">
                         <!-- Imagem 1 -->
                         <div class="flex justify-center">
                             <img src="imagens/katia2.png" alt="Dra. Katia Marmeleiro" class="w-full h-auto object-contain">
@@ -626,7 +633,7 @@
     </section>
 
     <!-- Seção de Contato -->
-    <section id="contato" class="relative py-8" style="background-image: url('gavilho-balanca-de-justica-e-livros-de-direito.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <section id="contato" class="relative py-8" style="background-image: url('imagens/fundo.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
         <!-- Overlay escuro para legibilidade -->
         <div class="absolute inset-0 bg-black bg-opacity-70"></div>
         <div class="container mx-auto px-4 relative z-10">
@@ -635,6 +642,11 @@
                 <h2 class="text-2xl md:text-2xl lg:text-3xl font-bold text-white text-center mb-8">
                     Entre em Contato:
                 </h2>
+                
+                <!-- Logo -->
+                <div class="flex justify-center mb-8">
+                    <img src="imagens/logobranco.png" alt="Katia Marmeleiro Advocacia" class="h-16 md:h-28 lg:h-32 w-auto">
+                </div>
                 
                 <!-- Informações de Contato -->
                 <div class="flex flex-col items-center text-center mb-8 max-w-6xl mx-auto">
@@ -769,4 +781,5 @@
     </script>
 </body>
 </html>
+
 
