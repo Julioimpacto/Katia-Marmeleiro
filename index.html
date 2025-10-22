@@ -178,6 +178,22 @@
             100% { transform: scale(1); }
         }
         
+        /* Alerta Piscante e Luminoso */
+        .alerta-title {
+            animation: blink 1.5s infinite, glow 2s infinite alternate;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); }
+            100% { text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6); }
+        }
+        
         /* Mobile First - Base styles for mobile */
         .hero-height {
             height: 100vh;
@@ -390,6 +406,50 @@
                             Atuação pautada pela ética, profissionalismo e busca incansável pela justiça e defesa dos direitos de seus clientes.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Alerta contra Golpes -->
+    <section class="py-12 relative" style="background-image: url('imagens/apertodemao.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Overlay escuro para legibilidade -->
+        <div class="absolute inset-0 bg-amber-800 bg-opacity-80"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Ícone de Alerta -->
+                <div class="mb-6">
+                    <i class="fas fa-exclamation-triangle text-white text-6xl"></i>
+                </div>
+                
+                <!-- Título -->
+                <h2 class="alerta-title text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6">
+                    ⚠️ Cuidado com o Golpe do Falso Advogado
+                </h2>
+                
+                <!-- Conteúdo do Alerta -->
+                <div class="bg-white bg-opacity-10 rounded-lg p-6 md:p-8 backdrop-blur-sm">
+                    <p class="text-white text-lg md:text-xl leading-relaxed mb-4">
+                        A <strong>Dra. Kátia Marmeleiro</strong> não envia mensagens, e-mails ou ligações solicitando PIX, doações ou qualquer tipo de cobrança.
+                    </p>
+                    <p class="text-white text-lg md:text-xl leading-relaxed mb-4">
+                        Caso receba esse tipo de contato, <strong>não realize pagamentos</strong> e entre em contato diretamente pelos canais oficiais do escritório.
+                    </p>
+                    <p class="text-white text-lg md:text-xl leading-relaxed font-semibold">
+                        Proteja-se contra golpes e verifique sempre a autenticidade das informações antes de tomar qualquer ação.
+                    </p>
+                </div>
+                
+                <!-- Botões de Ação -->
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://wa.me/5521985236037" target="_blank" class="bg-yellow-500 text-black hover:bg-yellow-400 px-8 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i>
+                        Contato Oficial
+                    </a>
+                    <a href="golpe.pdf" target="_blank" class="bg-yellow-500 text-black hover:bg-yellow-400 px-8 py-3 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                        <i class="fas fa-file-pdf mr-3 text-xl"></i>
+                        Saiba Mais
+                    </a>
                 </div>
             </div>
         </div>
@@ -645,7 +705,7 @@
                 
                 <!-- Logo -->
                 <div class="flex justify-center mb-8">
-                    <img src="imagens/logobranco.png" alt="Katia Marmeleiro Advocacia" class="h-16 md:h-28 lg:h-32 w-auto">
+                    <img src="imagens/logo.png" alt="Katia Marmeleiro Advocacia" class="h-16 md:h-28 lg:h-32 w-auto">
                 </div>
                 
                 <!-- Informações de Contato -->
@@ -781,5 +841,7 @@
     </script>
 </body>
 </html>
+
+
 
 
